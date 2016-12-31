@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Rigged game" />
+    <title>Batuhan's Rigged Game</title>
+    <script type="text/javascript" src="script/game/Math.js"></script>
+    <script type="text/javascript" src="script/game/Graph.js"></script>
+    <script type="text/javascript" src="script/game/CanvasRenderer.js"></script>
+    <script type="text/javascript" src="script/game/Drawable.js"></script>
+    <script type="text/javascript" src="script/game/Bell.js"></script>
+    <script type="text/javascript" src="script/game/Bucket.js"></script>
+    <script type="text/javascript" src="script/game/Dot.js"></script>
+    <script type="text/javascript" src="script/game/Fireball.js"></script>
+    <script type="text/javascript" src="script/game/SceneManager.js"></script>
+    <script type="text/javascript" src="script/game/GameManager.js"></script>
+    <script type="text/javascript" src="script/game/Main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/game.css" />
+</head>
+
+<body>
+    <main>
+        <h2>Contest</h2>
+        <p>
+            Ring the bells, collect 1000 points!
+        </p>
+        <div id="game-info">
+            <div id="score-container">
+                <span>Total Score:</span>
+                <span id="score"></span>
+            </div>
+            <div id="balls-left-container">
+                <span>Balls Left:</span>
+                <span id="ballsLeft"></span>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="600" height="500"></canvas>
+        <audio id="bellSound" src="sound/wwebell.mp3"></audio>
+    </main>
+</body>
+
+</html>

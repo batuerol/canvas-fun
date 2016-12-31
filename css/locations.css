@@ -1,0 +1,54 @@
+#location-container{
+    display:flex;
+    align-items: baseline;    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1em;
+}
+
+#location-container div{    
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    border-right-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+#location-container div:last-child{
+    border: none;
+}
+
+#location-container .open h3 {
+    color: green;
+}
+
+#location-container .closed h3 {
+    color: red;
+}
+
+#location-container .open .location-hours p::after {
+    content: " (open)";
+    color: green;
+    font-weight: bold;
+}
+
+#location-container .closed .location-hours p::after {
+    content: " (closed)";
+    color: red;
+    font-weight: bold;
+}
+
+.location h3 {
+    text-transform: uppercase;
+}
+
+.location h3:hover {
+    cursor: pointer;
+}
+
+#map {
+    margin-top: 1em;
+    height: 400px;
+    width: 100%;
+}

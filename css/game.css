@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;             
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#gameCanvas {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;            
+}
+
+#game-info {
+    display: flex;
+    width: 100%;    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 10px;    
+}
+
+#game-info div:nth-child(n) {
+    width: 25%;
+}
+
+#main {
+    opacity: 1;
+}
